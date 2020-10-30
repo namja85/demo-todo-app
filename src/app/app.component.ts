@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'material-todo';
+
+  log(text) {
+    console.log(text);
+  }
 }
