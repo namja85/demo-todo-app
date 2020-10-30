@@ -1,3 +1,7 @@
+.overlay {
+    margin: 5px;
+}
+
 .card {
     max-width: 50%;
 }
