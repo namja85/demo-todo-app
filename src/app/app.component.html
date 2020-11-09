@@ -1,10 +1,10 @@
 <app-dialog
-  [title]="'Dialog Prompt'"
-  [template]="'This is our new Material Design based Component:'"
-  [placeholder]="'Enter text here'"
-  [okText]="'Yes'"
+  [title]="'New Task'"
+  [template]="'Enter Task:'"
+  [placeholder]="'What do you need to do?'"
+  [okText]="okButtonText"
   [cancelText]="'No'"
-  [value]="'Starting Text'"
-  (valueEmitted)="log($event)"
-  [showPrompt]="true">
+  [value]="fieldValue"
+  (valueEmitted)="updateTodo($event)"
+  [showPrompt]="showDialog">
 </app-dialog>
