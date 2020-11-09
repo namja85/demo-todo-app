@@ -1,3 +1,33 @@
+<mat-card>
+  <mat-toolbar>
+    My Todo App
+    <button mat-mini-fab color="primary" (click)="todoDialog()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-card-content *ngIf="todoList.length">
+    <mat-list role="list">
+      <mat-list-item roll="listitem" *ngFor="let todo of todoList; index as i">
+        <mat-checkbox color="primary" [(ngModel)]="todo.completed">
+          <span>{{todo.title}}</span>
+        </mat-checkbox>
+        <span>
+          <button mat-mini-fab color="primary" (click)="remove(i)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </span>
+        <span>
+          <button mat-mini-fab color="primary" (click)="todoDialog(todo)">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </span>
+      </mat-list-item>
+    </mat-list>
+
+  </mat-card-content>
+</mat-card>
+
 <app-dialog
   [title]="'New Task'"
   [template]="'Enter Task:'"

@@ -9,8 +9,11 @@ import { DialogComponent } from './dialog/dialog.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import {MatInputModule} from '@angular/material/input';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatCardModule,
     MatButtonModule,
     MatInputModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
