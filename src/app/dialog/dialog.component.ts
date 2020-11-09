@@ -21,9 +21,6 @@ export class DialogComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log([
-      this.title, this.template, this.placeholder, this.okText, this.cancelText, this.value, this.showPrompt
-    ]);
   }
 
   emitValue(value) {
